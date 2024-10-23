@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f5f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8db596; /* Verde pastel */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e5c1bd; /* Roz pastel deschis */
+}
+
+.hero {
+    height: 100vh;
+    background-color: #f4dada; /* Roz pastel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 600px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#servicii {
+    background-color: #fff;
+    text-align: center;
+}
+
+#servicii h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service {
+    background-color: #f9f5f6; /* Alb cu tonuri pastel */
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #6c8496; /* Albastru pastel */
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+#despre {
+    background-color: #f2ece7; /* Bej pastel */
+    text-align: center;
+}
+
+#despre h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #a9b7c1; /* Gri pastel */
+}
+
+#despre p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#contact p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+footer {
+    background-color: #8db596; /* Verde pastel */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
